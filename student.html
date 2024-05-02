@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+ <h2>My Student Information</h2>
+ <table border="1">
+ <tr>
+ <th style="text-align:left">RollNo</th>
+ <th style="text-align:left">Name</th>
+ <th style="text-align:left">Class</th>
+ <th style="text-align:left">batch</th>
+ </tr>
+ <xsl:for-each select="student">
+ <tr>
+ <td><xsl:value-of select="roll"/>22CE1059</td>
+ <td><xsl:value-of select="name"/>Mrunmai Kadam</td>
+ <td><xsl:value-of select="class"/>SE</td>
+ <td><xsl:value-of select="batch"/>B3</td>
+ </tr>
+<tr>
+ <td><xsl:value-of select="roll"/>22CE1040</td>
+ <td><xsl:value-of select="name"/>Arya Khot</td>
+ <td><xsl:value-of select="class"/>SE</td>
+ <td><xsl:value-of select="batch"/>B3</td>
+ </tr>
+<tr>
+ <td><xsl:value-of select="roll"/>22CE1049</td>
+ <td><xsl:value-of select="name"/>Nishita Kapkar</td>
+ <td><xsl:value-of select="class"/>SE</td>
+ <td><xsl:value-of select="batch"/>B3</td>
+ </tr>
+<tr>
+ <td><xsl:value-of select="roll"/>22CE1050</td>
+ <td><xsl:value-of select="name"/>Aditi Honagekar</td>
+ <td><xsl:value-of select="class"/>SE</td>
+ <td><xsl:value-of select="batch"/>B2</td>
+ </tr>
+<tr>
+ <td><xsl:value-of select="roll"/>22CE1052</td>
+ <td><xsl:value-of select="name"/>Neha Hardikar</td>
+ <td><xsl:value-of select="class"/>SE</td>
+ <td><xsl:value-of select="batch"/>B1</td>
+ </tr>
+ </xsl:for-each>
+</table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>
